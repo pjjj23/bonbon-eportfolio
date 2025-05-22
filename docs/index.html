@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pj Bonbon | Eportfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Download CV -->
+     <button class="download-btn" id="downloadBtn">
+        <svg
+          class="download-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7,10 12,15 17,10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download CV
+      </button> 
+    
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+      <div class="shape">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="30" fill="url(#gradient1)" />
+          <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF6B35" />
+              <stop offset="100%" stop-color="#FF8C42" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="shape">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <rect
+            x="20"
+            y="20"
+            width="40"
+            height="40"
+            fill="url(#gradient2)"
+            transform="rotate(45 40 40)"
+          />
+          <defs>
+            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF6B35" />
+              <stop offset="100%" stop-color="#FF8C42" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="shape">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+          <polygon points="25,5 45,40 5,40" fill="url(#gradient3)" />
+          <defs>
+            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF6B35" />
+              <stop offset="100%" stop-color="#FF8C42" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-content">
+        <a href="#" class="logo">PJ Bonbon</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+      <!-- Left Panel - ID Card -->
+      <div class="id-panel">
+        <div class="id-card-container"></div>
+        <div class="id-info">
+          <div class="id-title">Tech Stack</div>
+          <div class="tech-stack">
+            <div class="tech-item">
+              <i class="fab fa-html5" title="HTML5"></i>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-js" title="JavaScript"></i>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-python" title="Django"></i>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-fire" title="Firebase"></i>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-windows" title="C#"></i>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-flutter" title="Flutter"></i>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-php" title="PHP"></i>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-database" title="MySQL"></i>
+            </div>
+          </div>
+
+          <div class="id-title" style="margin-top: 25px">Socials</div>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/pj.bonbon"
+              target="_blank"
+              class="social-link"
+              title="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/philip-john-bonbon-693a432b1/?originalSubdomain=ph"
+              target="_blank"
+              class="social-link"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/pjjj23"
+              target="_blank"
+              class="social-link"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel - Content -->
+      <div class="content-panel">
+        <!-- About Section -->
+        <section class="section" id="about">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Creative professional with a passion for innovative design and
+            cutting-edge technology
+          </p>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I'm a multidisciplinary designer and developer with over 5 years
+                of experience creating immersive digital experiences. My work
+                spans across UI/UX design, 3D modeling, and full-stack
+                development.
+              </p>
+
+              <p>
+                I believe in the power of merging creativity with technology to
+                solve complex problems and create meaningful user experiences.
+                When I'm not coding or designing, you can find me exploring new
+                technologies or working on personal creative projects.
+              </p>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-code"></i> Frontend Development
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-palette"></i> UI/UX Design
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-cube"></i> 3D Modeling
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i> Mobile Design
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i> Backend Development
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-line"></i> Data Visualization
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            A showcase of my recent work across different domains and
+            technologies
+          </p>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3 class="project-title">
+                CTU-Argao Campus Accredited Boarding houses
+              </h3>
+              <p class="project-description">
+                A fully responsive website featuring interactive 3D elements
+                built with Three.js and React. Includes custom animations and
+                optimized performance.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Javascript</span>
+                <span class="tech-tag">Firebase</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Weather Finder</h3>
+              <p class="project-description">
+                A modern e-commerce solution with advanced filtering, real-time
+                inventory management, and seamless payment integration.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Javascript</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Plant Quiz Game</h3>
+              <p class="project-description">
+                An augmented reality application that allows users to visualize
+                furniture in their space before making a purchase decision.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Javascript</span>
+              </div>
+            </div>
+
+            <div class="project-card" data-id="scheduling-reminder">
+              <h3 class="project-title">Scheduling Reminder</h3>
+              <p class="project-description">
+                A comprehensive analytics dashboard with real-time data
+                visualization, custom charts, and interactive reporting
+                features.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Javascript</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">Scheduling Reminder</h3>
+              <p class="project-description">
+                A comprehensive analytics dashboard with real-time data
+                visualization, custom charts, and interactive reporting
+                features.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Javascript</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">
+            My professional journey and key milestones in the tech industry
+          </p>
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <div class="experience-date">2022 - Present</div>
+              <h3 class="experience-title">Senior Frontend Developer</h3>
+              <div class="experience-company">TechInnovate Solutions</div>
+              <p class="experience-description">
+                Leading the frontend development team in creating cutting-edge
+                web applications. Responsible for architecture decisions,
+                mentoring junior developers, and implementing best practices for
+                scalable React applications.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="experience-date">2020 - 2022</div>
+              <h3 class="experience-title">Full Stack Developer</h3>
+              <div class="experience-company">Digital Creative Agency</div>
+              <p class="experience-description">
+                Developed end-to-end web solutions for clients ranging from
+                startups to enterprise companies. Specialized in creating
+                responsive designs and optimizing application performance.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="experience-date">2019 - 2020</div>
+              <h3 class="experience-title">UI/UX Designer</h3>
+              <div class="experience-company">StartupHub Inc.</div>
+              <p class="experience-description">
+                Designed user interfaces and experiences for multiple mobile and
+                web applications. Conducted user research, created wireframes,
+                and collaborated closely with development teams.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="experience-date">2018 - 2019</div>
+              <h3 class="experience-title">Junior Developer</h3>
+              <div class="experience-company">WebSolutions Co.</div>
+              <p class="experience-description">
+                Gained hands-on experience in web development, working on
+                various client projects and learning modern development
+                practices and frameworks.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Let's collaborate on your next project or discuss exciting
+            opportunities
+          </p>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <span>pjjbonbon@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone contact-icon"></i>
+                <span>+639 9595 783 22</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <span>Cebu, Philippines</span>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-linkedin contact-icon"></i>
+                <span>linkedin.com/in/philip-john-bonbon-693a432b1/</span>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github contact-icon"></i>
+                <span>github.com/pjjj23</span>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea class="form-textarea" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Project Modal Template -->
+    <div class="project-modal-overlay" id="projectModal">
+      <div class="project-modal">
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="modal-image" id="modalImage"></div>
+
+        <div class="modal-content">
+          <div class="modal-tag modal-animate delay-1" id="modalCategory">
+            Web Development
+          </div>
+          <h2 class="modal-title modal-animate delay-1" id="modalTitle">
+            Project Title
+          </h2>
+
+          <p
+            class="modal-description modal-animate delay-2"
+            id="modalDescription"
+          >
+            Project description will appear here with all the details about the
+            project scope, challenges, and solutions implemented.
+          </p>
+
+          <div class="modal-details modal-animate delay-2">
+            <div class="detail-item">
+              <div class="detail-label">Client</div>
+              <div class="detail-value" id="modalClient">Client Name</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Year started</div>
+              <div class="detail-value" id="modalDate">January 2023</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Role</div>
+              <div class="detail-value" id="modalRole">Lead Developer</div>
+            </div>
+          </div>
+
+          <div class="modal-tech modal-animate delay-3">
+            <h3 class="modal-tech-title">Technologies Used</h3>
+            <div class="modal-tech-items" id="modalTech">
+              <!-- Tech tags will be added here dynamically -->
+            </div>
+          </div>
+
+          <div class="modal-links modal-animate delay-4" id="modalLinks">
+            <a
+              href=""
+              target="_blank"
+              class="modal-link"
+              id="liveLink"
+              onclick="handleLiveLinkClick(event)"
+            >
+              <i class="fas fa-external-link-alt"></i> View Live
+            </a>
+            <a
+              href=""
+              target="_blank"
+              class="modal-link"
+              id="codeLink"
+              onclick="handleLiveLinkClick(event)"
+            >
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+
+          <div class="modal-divider modal-animate delay-5"></div>
+
+          <h3 class="modal-tech-title modal-animate delay-5">
+            Project Gallery
+          </h3>
+          <div class="modal-gallery modal-animate delay-5" id="modalGallery">
+            <!-- Gallery items will be added here dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="mobile-toggle" id="mobileToggle">
+      <i class="fas fa-id-card"></i>
+    </button>
+    <!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+
+<!-- Firebase Storage -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+      apiKey: "AIzaSyAfCuib-Q7FmAlr9oj9CIwBONeMkWnpdgU",
+      authDomain: "ctuacaccreditedboardinghouse.firebaseapp.com",
+      databaseURL: "https://ctuacaccreditedboardinghouse-default-rtdb.firebaseio.com",
+      projectId: "ctuacaccreditedboardinghouse",
+      storageBucket: "ctuacaccreditedboardinghouse.appspot.com",
+      messagingSenderId: "930916912489",
+      appId: "1:930916912489:web:58f4a20a4ca620471c81f8",
+      measurementId: "G-2KK40DYS31"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+      // Loading Screen
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loadingScreen");
+        const downloadBtn = document.getElementById("downloadBtn");
+        setTimeout(() => {
+          loadingScreen.classList.add("hidden");
+          downloadBtn.classList.add("hidden");
+        }, 1500);
+      }); 
+
+      // Make sure Firebase SDK is initialized
+
+      document.getElementById("downloadBtn").addEventListener("click", () => {
+    const storage = firebase.storage();
+    const storageRef = storage.ref("AlayTrabaho/Bonbon-Philip-John-SchoolID.pdf");
+
+    const downloadBtn = document.getElementById("downloadBtn");
+    downloadBtn.disabled = true;
+    downloadBtn.innerText = "Downloading...";
+
+    storageRef.getDownloadURL()
+      .then((url) => fetch(url))
+      .then((response) => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.blob();
+      })
+      .then((blob) => {
+        const link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = "Philip_John_SchoolID.pdf"; // force custom filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(link.href);
+        downloadBtn.disabled = false;
+        downloadBtn.innerText = "Download CV";
+      })
+      .catch((error) => {
+        console.error("Download failed:", error);
+        alert("Failed to download file.");
+        downloadBtn.disabled = false;
+        downloadBtn.innerText = "Download CV";
+      });
+  });
+
+
+
+      // Navbar Scroll Effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Smooth Scroll for Navigation Links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Project Card Interactions
+      document.querySelectorAll(".project-card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-10px) scale(1.02)";
+        });
+
+        card.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) scale(1)";
+        });
+      });
+
+      // Contact Form
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const button = this.querySelector(".btn-submit");
+          const originalText = button.textContent;
+
+          // Simulate form submission
+          button.textContent = "Sending...";
+          button.disabled = true;
+
+          setTimeout(() => {
+            button.textContent = "Message Sent!";
+            button.style.background =
+              "linear-gradient(135deg, #10B981 0%, #059669 100%)";
+
+            setTimeout(() => {
+              button.textContent = originalText;
+              button.disabled = false;
+              button.style.background =
+                "linear-gradient(135deg, var(--accent-color) 0%, #FF8C42 100%)";
+              this.reset();
+            }, 2000);
+          }, 1500);
+        });
+
+      // Intersection Observer for Animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections
+      document.querySelectorAll(".section").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Skill Items Hover Effect
+      document.querySelectorAll(".skill-item").forEach((item) => {
+        item.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-5px) scale(1.05)";
+        });
+
+        item.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) scale(1)";
+        });
+      });
+
+      // Experience Timeline Animation
+      const timelineItems = document.querySelectorAll(".experience-item");
+      const timelineObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateX(0)";
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      timelineItems.forEach((item) => {
+        item.style.opacity = "0";
+        item.style.transform = "translateX(-30px)";
+        item.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        timelineObserver.observe(item);
+      });
+
+      // Contact Items Hover Effect
+      document.querySelectorAll(".contact-item").forEach((item) => {
+        item.addEventListener("mouseenter", function () {
+          this.style.transform = "translateX(10px)";
+          this.style.background = "rgba(255, 107, 53, 0.1)";
+        });
+
+        item.addEventListener("mouseleave", function () {
+          this.style.transform = "translateX(0)";
+          this.style.background = "var(--glass-bg)";
+        });
+      });
+
+      // Parallax Effect for Floating Shapes
+      window.addEventListener("scroll", function () {
+        const scrolled = window.pageYOffset;
+        const shapes = document.querySelectorAll(".shape");
+
+        shapes.forEach((shape, index) => {
+          const speed = (index + 1) * 0.1;
+          shape.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+      });
+
+      // Typing Effect for Section Titles
+      function typeWriter(element, text, speed = 100) {
+        let i = 0;
+        element.textContent = "";
+
+        function type() {
+          if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+          }
+        }
+        type();
+      }
+
+      // Initialize typing effect when sections come into view
+      const typingObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !entry.target.dataset.typed) {
+              const title = entry.target.querySelector(".section-title");
+              const originalText = title.textContent;
+              typeWriter(title, originalText, 80);
+              entry.target.dataset.typed = "true";
+            }
+          });
+        },
+        { threshold: 0.7 }
+      );
+
+      document.querySelectorAll(".section").forEach((section) => {
+        typingObserver.observe(section);
+      });
+
+      // Dynamic Color Theme Based on Time
+      function updateThemeBasedOnTime() {
+        const hour = new Date().getHours();
+        const root = document.documentElement;
+
+        if (hour >= 6 && hour < 18) {
+          // Day theme - lighter accent
+          root.style.setProperty("--accent-color", "#FF6B35");
+        } else {
+          // Night theme - cooler accent
+          root.style.setProperty("--accent-color", "#8B5CF6");
+        }
+      }
+
+      updateThemeBasedOnTime();
+      setInterval(updateThemeBasedOnTime, 3600000); // Update every hour
+
+      // Keyboard Navigation
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+          e.preventDefault();
+          const sections = document.querySelectorAll(".section");
+          const currentSection = Array.from(sections).find((section) => {
+            const rect = section.getBoundingClientRect();
+            return rect.top >= 0 && rect.top <= window.innerHeight / 2;
+          });
+
+          if (currentSection) {
+            const currentIndex = Array.from(sections).indexOf(currentSection);
+            let nextIndex;
+
+            if (e.key === "ArrowDown") {
+              nextIndex = Math.min(currentIndex + 1, sections.length - 1);
+            } else {
+              nextIndex = Math.max(currentIndex - 1, 0);
+            }
+
+            sections[nextIndex].scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      });
+
+      // Performance Optimization - Lazy Load Images
+      if ("IntersectionObserver" in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              img.classList.remove("lazy");
+              imageObserver.unobserve(img);
+            }
+          });
+        });
+
+        document.querySelectorAll("img[data-src]").forEach((img) => {
+          imageObserver.observe(img);
+        });
+      }
+
+      // Add this new code for the mobile toggle functionality
+      const mobileToggle = document.getElementById("mobileToggle");
+      const idPanel = document.querySelector(".id-panel");
+
+      // Toggle ID panel visibility on mobile
+      mobileToggle.addEventListener("click", function () {
+        idPanel.classList.toggle("active");
+
+        // Change the icon based on state
+        const icon = this.querySelector("i");
+        if (idPanel.classList.contains("active")) {
+          icon.className = "fas fa-times";
+        } else {
+          icon.className = "fas fa-id-card";
+        }
+      });
+
+      // Hide panel when scrolling on mobile
+      let lastScrollTop = 0;
+      window.addEventListener(
+        "scroll",
+        function () {
+          // Only execute on mobile/tablet sizes
+          if (window.innerWidth <= 1200) {
+            const st = window.pageYOffset || document.documentElement.scrollTop;
+
+            // If scrolled more than 50px, hide the panel
+            if (Math.abs(lastScrollTop - st) > 50) {
+              idPanel.classList.remove("active");
+              mobileToggle.querySelector("i").className = "fas fa-id-card";
+            }
+
+            lastScrollTop = st <= 0 ? 0 : st;
+          }
+        },
+        false
+      );
+
+      function handleLiveLinkClick(event) {
+        const link = event.currentTarget.getAttribute("href");
+        if (!link || link.trim() === "") {
+          event.preventDefault();
+          alert("No live link available.");
+        }
+      }
+
+      // Adjust layout when window is resized
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 1200) {
+          // On larger screens, ensure the panel is always visible
+          idPanel.classList.remove("active");
+        }
+      });
+
+      // Project Modal JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        // Project data - replace with your actual project data
+        const projectsData = [
+          {
+            id: "ctu-boarding-houses",
+            title: "CTU-Argao Campus Accredited Boarding houses",
+            category: "Web Development",
+            description:
+              "A responsive capstone project website developed for CTU-Argao Campus (CTU-AC), designed to help students conveniently find accredited boarding houses. The platform supports three user roles: Superadmin (SAO), Admin (boarding house owners), and Students each with dedicated functionalities. Key features include virtual tours, real-time room availability tracking, booking management, messaging system, and interactive location viewing, all tailored to enhance the boarding house search and management experience.",
+            client: "CTU-Argao Campus Student Affairs Office",
+            date: "2024",
+            role: "Leader/Core Developer",
+            image: "assets/img/ctu-accredited-project/cover.png",
+            technologies: [
+              { name: "Django", icon: "fab fa-python" },
+              { name: "HTML5", icon: "fab fa-html5" },
+              { name: "CSS3", icon: "fab fa-css3-alt" },
+              { name: "JavaScript", icon: "fab fa-js" },
+              { name: "Firebase", icon: "fas fa-fire" },
+            ],
+            links: {
+              live: "https://accreditedboardinghousesctuac.pythonanywhere.com/",
+              code: "https://github.com/pjjj23/ctu-ac-accreditedboardinghouse-datalink",
+            },
+            gallery: [
+              "assets/img/ctu-accredited-project/gallery1.png",
+              "assets/img/ctu-accredited-project/gallery2.png",
+              "assets/img/ctu-accredited-project/gallery3.png",
+              "assets/img/ctu-accredited-project/gallery4.png",
+              "assets/img/ctu-accredited-project/gallery5.png",
+              "assets/img/ctu-accredited-project/gallery6.png",
+              "assets/img/ctu-accredited-project/gallery7.png",
+            ],
+          },
+          {
+            id: "weather-finder",
+            title: "Weather Finder",
+            category: "Web Application",
+            description:
+              "A web application that delivers real-time weather updates for any location worldwide. It provides accurate and up-to-date information including wind speed, humidity, atmospheric pressure, and visibility based on user input. The application is seamlessly integrated with WeatherAPI.com to ensure reliable and precise weather data.",
+            client: "Retail Solutions Inc.",
+            date: "2022",
+            role: "Frontend Lead",
+            image: "assets/img/weather-finder-project/cover.png",
+            technologies: [
+              { name: "HTML5", icon: "fab fa-html5" },
+              { name: "CSS3", icon: "fab fa-css3-alt" },
+              { name: "JavaScript", icon: "fab fa-js" },
+            ],
+            links: {
+              live: "https://weatherfinder-alpha.vercel.app/",
+              code: "https://github.com/pjjj23/weatherfinder",
+            },
+            gallery: [
+              "assets/img/weather-finder-project/gallery1.png",
+              "assets/img/weather-finder-project/gallery2.png",
+              "assets/img/weather-finder-project/gallery3.png",
+            ],
+          },
+          {
+            id: "plant-quiz-game",
+            title: "Plant Quiz Game",
+            category: "Web Game Development",
+            description:
+              "An augmented reality application that allows users to visualize furniture in their space before making a purchase decision. The app uses advanced AR technologies to accurately place 3D models of furniture in the real world, with features for measuring spaces, custom color selection, and saving layouts.",
+            client: "FurnishNow",
+            date: "2022",
+            role: "AR Developer",
+            image: "assets/img/plant-quiz-project/cover.png",
+            technologies: [
+              { name: "React Native", icon: "fab fa-react" },
+              { name: "ARKit", icon: "fas fa-cubes" },
+              { name: "ARCore", icon: "fas fa-cube" },
+              { name: "Firebase", icon: "fas fa-fire" },
+            ],
+            links: {
+              live: "",
+              code: "https://github.com/pjjj23/PlantQuizGame",
+            },
+            gallery: [
+              "assets/img/plant-quiz-project/gallery1.png",
+              "assets/img/plant-quiz-project/gallery2.png",
+              "assets/img/plant-quiz-project/gallery3.png",
+              "assets/img/plant-quiz-project/gallery4.png",
+              "assets/img/plant-quiz-project/gallery5.png",
+            ],
+          },
+          {
+            id: "scheduling-project",
+            title: "Scheduling Project",
+            category: "Data Visualization",
+            description:
+              "A comprehensive analytics dashboard with real-time data visualization, custom charts, and interactive reporting features. The dashboard includes customizable widgets, role-based access control, data export capabilities, and automated report generation to help businesses make data-driven decisions.",
+            client: "DataMetrics Corp",
+            date: "2021",
+            role: "Data Visualization Expert",
+            image: "assets/img/scheduling-project/cover.png",
+            technologies: [
+              { name: "Django", icon: "fab fa-python" },
+              { name: "PostgreSQL", icon: "fas fa-database" },
+            ],
+            links: {
+              live: "",
+              code: "https://github.com/pjjj23/schedule-project",
+            },
+            gallery: [
+              "assets/img/scheduling-project/gallery1.png",
+              "assets/img/scheduling-project/gallery2.png",
+              "assets/img/scheduling-project/gallery3.png",
+            ],
+          },
+          {
+            id: "schedule-project",
+            title: "Scheduling Project",
+            category: "Data Visualization",
+            description:
+              "A comprehensive analytics dashboard with real-time data visualization, custom charts, and interactive reporting features. The dashboard includes customizable widgets, role-based access control, data export capabilities, and automated report generation to help businesses make data-driven decisions.",
+            client: "DataMetrics Corp",
+            date: "2021",
+            role: "Data Visualization Expert",
+            image: "assets/img/scheduling-project/cover.png",
+            technologies: [
+              { name: "D3.js", icon: "fas fa-chart-line" },
+              { name: "Python", icon: "fab fa-python" },
+              { name: "Django", icon: "fab fa-python" },
+              { name: "PostgreSQL", icon: "fas fa-database" },
+            ],
+            links: {
+              live: "",
+              code: "https://github.com/pjjj23/schedule-project",
+            },
+            gallery: [
+              "assets/img/scheduling-project/gallery1.png",
+              "assets/img/scheduling-project/gallery2.png",
+              "assets/img/scheduling-project/gallery3.png",
+            ],
+          },
+        ];
+
+        // DOM Elements
+        const modal = document.getElementById("projectModal");
+        const modalClose = document.getElementById("modalClose");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        // Modal Elements
+        const modalImage = document.getElementById("modalImage");
+        const modalCategory = document.getElementById("modalCategory");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+        const modalClient = document.getElementById("modalClient");
+        const modalDate = document.getElementById("modalDate");
+        const modalRole = document.getElementById("modalRole");
+        const modalTech = document.getElementById("modalTech");
+        const modalLinks = document.getElementById("modalLinks");
+        const liveLink = document.getElementById("liveLink");
+        const codeLink = document.getElementById("codeLink");
+        const modalGallery = document.getElementById("modalGallery");
+
+        // Open modal with specific project data
+        function openProjectModal(projectId) {
+          // Find the project data by matching project title
+          const project = projectsData.find((p) => {
+            // Try to match by ID first, then by title if ID is not present
+            if (projectId) return p.id === projectId;
+            return false;
+          });
+
+          // If no project found, use the first one as fallback
+          const projectData = project || projectsData[0];
+
+          // Populate modal with project data
+          modalImage.style.backgroundImage = `url('${projectData.image}')`;
+          modalCategory.textContent = projectData.category;
+          modalTitle.textContent = projectData.title;
+          modalDescription.textContent = projectData.description;
+          modalClient.textContent = projectData.client;
+          modalDate.textContent = projectData.date;
+          modalRole.textContent = projectData.role;
+
+          // Clear and populate technologies
+          modalTech.innerHTML = "";
+          projectData.technologies.forEach((tech) => {
+            const techTag = document.createElement("div");
+            techTag.className = "modal-tech-tag";
+            techTag.innerHTML = `<i class="${tech.icon}"></i> ${tech.name}`;
+            modalTech.appendChild(techTag);
+          });
+
+          // Update links
+          liveLink.href = projectData.links.live;
+          codeLink.href = projectData.links.code;
+
+          // Clear and populate gallery
+          modalGallery.innerHTML = "";
+          projectData.gallery.forEach((img) => {
+            const galleryItem = document.createElement("div");
+            galleryItem.className = "gallery-item";
+            galleryItem.style.backgroundImage = `url('${img}')`;
+            galleryItem.addEventListener("click", () => {
+              // Open full-size image in a new tab or implement lightbox here
+              window.open(img, "_blank");
+            });
+            modalGallery.appendChild(galleryItem);
+          });
+
+          // Show modal with animation
+          modal.classList.add("active");
+          document.body.style.overflow = "hidden"; // Prevent background scrolling
+
+          // Reset scroll position of modal
+          document.querySelector(".project-modal").scrollTop = 0;
+        }
+
+        // Close modal
+        function closeProjectModal() {
+          modal.classList.remove("active");
+          document.body.style.overflow = ""; // Re-enable scrolling
+        }
+
+        // Add click events to project cards
+        projectCards.forEach((card, index) => {
+          // Extract project title from card
+          const projectTitle = card
+            .querySelector(".project-title")
+            .textContent.trim();
+
+          // Find corresponding project ID
+          const projectId =
+            projectsData.find((p) => p.title === projectTitle)?.id ||
+            `project-${index}`;
+
+          // Add project ID as data attribute to the card
+          card.setAttribute("data-project-id", projectId);
+
+          // Add click event
+          card.addEventListener("click", () => {
+            openProjectModal(projectId);
+          });
+        });
+
+        // Close modal when clicking the close button
+        modalClose.addEventListener("click", closeProjectModal);
+
+        // Close modal when clicking outside
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            closeProjectModal();
+          }
+        });
+
+        // Close modal with escape key
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
+            closeProjectModal();
+          }
+        });
+
+        // Prevent modal content clicks from closing the modal
+        document
+          .querySelector(".project-modal")
+          .addEventListener("click", (e) => {
+            e.stopPropagation();
+          });
+
+        // Add subtle parallax effect to modal image on mouse move
+        const modalContainer = document.querySelector(".project-modal");
+
+        modalContainer.addEventListener("mousemove", (e) => {
+          if (!modal.classList.contains("active")) return;
+
+          const rect = modalContainer.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          const xPercent = x / rect.width - 0.5;
+          const yPercent = y / rect.height - 0.5;
+
+          modalImage.style.transform = `scale(1.05) translate(${
+            xPercent * -10
+          }px, ${yPercent * -10}px)`;
+        });
+
+        modalContainer.addEventListener("mouseleave", () => {
+          modalImage.style.transform = "scale(1) translate(0, 0)";
+        });
+      });
+
+      // Console Easter Egg
+      console.log(`
+        ╔══════════════════════════════════════════╗
+        ║                                          ║
+        ║           Welcome to my Portfolio!       ║
+        ║                                          ║
+        ║     👨‍💻 Interested in the code?           ║
+        ║     🚀 Let's build something amazing!    ║
+        ║     📧 Contact me for opportunities      ║
+        ║                                          ║
+        ╚══════════════════════════════════════════╝
+        `);
+    </script>
+  </body>
+</html>
