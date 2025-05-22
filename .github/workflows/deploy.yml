@@ -17,6 +17,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.SECRET_GITHUB_TOKEN }}
+          github_token: ${{ secrets.MY_TOKEN }}
           publish_dir: ./root # Or ./"the folder name where your static files are located"
           
