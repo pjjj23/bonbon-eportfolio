@@ -10,7 +10,7 @@
     />
 
     <!-- CSS file -->
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="assets/style/main.css" />
   </head>
   <body>
     <!-- Loading Screen -->
@@ -20,20 +20,18 @@
 
     <!-- Download CV -->
     <button class="download-btn" id="downloadBtn">
-      <svg
-        class="download-icon"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
+      <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
         <polyline points="7,10 12,15 17,10" />
         <line x1="12" y1="15" x2="12" y2="3" />
       </svg>
-      Download CV
+      <span id="downloadText">Download CV</span>
+      <span id="downloadSpinner" style="display: none;">
+        <svg class="spinner" viewBox="0 0 50 50">
+          <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+        Downloading...
+      </span>
     </button>
 
     <!-- Floating Shapes -->
@@ -377,18 +375,18 @@
               <h3 class="experience-title">Full Stack Developer</h3>
               <div class="experience-company">Capstone Project</div>
               <p class="experience-description">
-                Leader and the Core dev of the group. Responsible for coding the
+                Leader and the Core dev of the group. Responsible for coding the Mockup
                 UI provided by my member and responsibe for the backend logic.
               </p>
             </div>
             <div class="experience-item">
-              <div class="experience-date">2019 - 2020</div>
-              <h3 class="experience-title">UI/UX Designer</h3>
-              <div class="experience-company">StartupHub Inc.</div>
+              <div class="experience-date">2024 - Present</div>
+              <h3 class="experience-title">Accepting Commissions</h3> 
               <p class="experience-description">
-                Designed user interfaces and experiences for multiple mobile and
-                web applications. Conducted user research, created wireframes,
-                and collaborated closely with development teams.
+                Starting to accept commissions online. Joined chats online where 
+                students and other workers gather in chat. Clients post about what they 
+                want to achieve, and developers reached out. Projects made so far are IoT, 
+                websites, mobile-app, desktop apps.
               </p>
             </div>
             <div class="experience-item">
@@ -424,15 +422,7 @@
               <div class="contact-item">
                 <i class="fas fa-map-marker-alt contact-icon"></i>
                 <span>Cebu, Philippines</span>
-              </div>
-              <div class="contact-item">
-                <i class="fab fa-linkedin contact-icon"></i>
-                <span>linkedin.com/in/philip-john-bonbon-693a432b1/</span>
-              </div>
-              <div class="contact-item">
-                <i class="fab fa-github contact-icon"></i>
-                <span>github.com/pjjj23</span>
-              </div>
+              </div>  
             </div>
             <form class="contact-form" id="contactForm">
               <div class="form-group">
@@ -551,9 +541,17 @@
     <!-- Firebase Database -->
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
-
-    <!-- Call all .js logic in one file -->
-    <script type="module" src="js/main.js"></script>
+    <script src="assets/js/firebase-config.js"></script>
+    <script src="assets/js/download-cv.js"></script>
+    <script src="assets/js/loading-screen.js"></script>
+    <script src="assets/js/navbar-effects.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/project-card-effects.js"></script>
+    <script src="assets/js/intersection-observers.js"></script>
+    <script src="assets/js/theme-time.js"></script>
+    <script src="assets/js/keyboard-navigation.js"></script>
+    <script src="assets/js/lazy-loading.js"></script>
+    <script src="assets/js/mobile-toggle.js"></script>
+    <script src="assets/js/project-modal.js"></script> 
   </body>
 </html>

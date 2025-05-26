@@ -1,8 +1,8 @@
-export function initAnimations() {
-    // Intersection Observer for section animations
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for Animations
     const observerOptions = {
       threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px"
+      rootMargin: "0px 0px -50px 0px",
     };
   
     const observer = new IntersectionObserver((entries) => {
@@ -14,6 +14,7 @@ export function initAnimations() {
       });
     }, observerOptions);
   
+    // Observe all sections
     document.querySelectorAll(".section").forEach((section) => {
       observer.observe(section);
     });
@@ -38,14 +39,4 @@ export function initAnimations() {
       item.style.transition = "opacity 0.6s ease, transform 0.6s ease";
       timelineObserver.observe(item);
     });
-  
-    // Parallax Effect for Floating Shapes
-    window.addEventListener("scroll", function() {
-      const scrolled = window.pageYOffset;
-      const shapes = document.querySelectorAll(".shape");
-      shapes.forEach((shape, index) => {
-        const speed = (index + 1) * 0.1;
-        shape.style.transform = `translateY(${scrolled * speed}px)`;
-      });
-    });
-  }
+  });
