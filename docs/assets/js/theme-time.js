@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const hour = new Date().getHours();
       const root = document.documentElement;
   
-      if (hour >= 6 && hour < 11) {
+      if (hour >= 6 && hour < 18) {
         // Day theme - lighter accent
         root.style.setProperty("--accent-color", "#FF6B35");
       } else {
