@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     downloadBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        const fileId = "1KWi-oV4X7wrCf9GUBUKbJBS2qYzJHGVW";
+        const fileId = "1lrB82ZpAjtrHj_JuF99hfIXxOUtkzHdd";
         
         // Create temporary link
         const link = document.createElement("a");
@@ -14,4 +14,4 @@ document.addEventListener('DOMContentLoaded', function() {
         link.click();
         document.body.removeChild(link);
     });
-});
+}); 
